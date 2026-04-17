@@ -2013,3 +2013,117 @@ img {
         top: 1rem;
     }
 }
+
+/* Research section */
+#research {
+    padding: 60px 0;
+}
+
+#research .container {
+    max-width: 1400px;
+    width: 92%;
+    margin: 0 auto;
+}
+
+#research h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #0a2a57;
+}
+
+#research hr {
+    border: none;
+    border-top: 1px solid #cfcfcf;
+    margin: 28px 0;
+}
+
+/* Each research block */
+.research-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 22px;
+    margin: 32px 0;
+}
+
+/* Left image card */
+.research-image {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    max-height: 420px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* Right text card */
+.research-content {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 28px 32px;
+    min-height: 420px;
+    max-height: 420px;
+    box-sizing: border-box;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.research-content h3 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin: 0 0 18px 0;
+    text-align: center;
+    color: #0a2a57;
+}
+
+.research-content p {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    margin: 0;
+    color: #222;
+    text-align: left;
+}
+
+/* Better desktop consistency on different screen sizes */
+@media (max-width: 1400px) {
+    .research-image,
+    .research-content {
+        min-height: 380px;
+        max-height: 380px;
+    }
+
+    .research-content h3 {
+        font-size: 2rem;
+    }
+
+    .research-content p {
+        font-size: 1.05rem;
+    }
+}
+
+/* Tablet / small desktop */
+@media (max-width: 1000px) {
+    .research-area {
+        grid-template-columns: 1fr;
+    }
+
+    .research-image,
+    .research-content {
+        min-height: auto;
+        max-height: none;
+    }
+
+    .research-image {
+        height: 320px;
+    }
+}
