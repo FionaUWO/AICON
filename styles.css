@@ -288,19 +288,20 @@ section img {
 .image-grid {
     display: flex;
     justify-content: center;
+    align-items: flex-start;   /* 关键：让每个卡片从顶部对齐 */
     gap: 2vw;
     margin-top: 2vw;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    flex-wrap: wrap;
 }
 
 .image-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;  /* 不要居中，改成从上往下排 */
     text-align: center;
     flex: 1;
-    min-width: 250px; /* Ensure a minimum width before wrapping */
+    min-width: 250px;
 }
 
 .image-item img {
